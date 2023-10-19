@@ -1,0 +1,62 @@
+/* css header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    float: left;
+    height: var(--header-height);
+    width: 100%;
+}
+
+/* header left */
+.header__left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    padding: 0 16px;
+}
+
+.logo {
+    height: 36px;
+    flex: 1;
+    background-image: url(../../assets/icon/ic-logo.svg);
+    background-position: start center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding-left: 44px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* header right */
+.header__right {
+    height: 100%;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.header__icon {
+    padding: 4px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.header__icon:hover {
+    background-color: #f1f1f1;
+}
+
+.header__right .user-avatar {
+    background-image: url(../../assets/icon/user-avatar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin-left: 12px;
+}

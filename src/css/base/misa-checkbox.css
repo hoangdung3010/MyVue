@@ -1,0 +1,17 @@
+/* input type checkbox */
+input[type='checkbox'] {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    accent-color: var(--color-primary);
+    cursor: pointer;
+}
+
+input[type='checkbox']:focus-visible {
+    outline: 1px solid var(--color-primary);
+}
+
+input[type='radio'] {
+    accent-color: var(--color-primary);
+    cursor: pointer;
+}

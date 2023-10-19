@@ -1,0 +1,7 @@
+.form-group .ms-input + .ms-input {
+    margin-top: 24px;
+}
+
+.form-group .ms-input:nth-child(1), .form-group .ms-input:nth-child(2) {
+    margin: 0px;
+}

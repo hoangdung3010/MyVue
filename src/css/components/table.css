@@ -1,0 +1,78 @@
+.ms-table {
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #1F1F1F;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    border-radius: 4px;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.ms-table input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+}
+
+.ms-table td, .ms-table th {
+    padding: 0 16px;
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    white-space: nowrap;
+}
+
+.ms-table thead {
+    font-weight: 700;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    background-color: #EEEEEE;
+    position: sticky;
+    top: -1px;
+    z-index: 2;
+}
+
+.ms-table tr {
+    height: 48px;
+    padding: 0;
+    position: relative;
+}
+
+.ms-table tr:hover {
+    background-color: #F2F2F2;
+}
+
+.ms-table tbody {
+    font-weight: 400;
+}
+
+.ms-table__action-edit, .ms-table__action-delete {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.078);
+}
+
+.ms-table__action {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}

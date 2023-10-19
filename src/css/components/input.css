@@ -1,0 +1,142 @@
+.ms-input {
+  display: inline-flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.ms-input-action input {
+  padding-right: 28px;
+}
+
+.ms-input__label {
+  font-weight: 800;
+  font-size: 14px;
+  color: #1f1f1f;
+}
+
+.ms-input input {
+  width: 100%;
+  height: 36px;
+  padding-left: 12px;
+  border-radius: 4px;
+  border: 1px solid #e6e6e6;
+  outline: none;
+  font-weight: 400;
+  font-size: 14px;
+  cursor: text !important;
+}
+
+.ms-input input::placeholder {
+  color: #999999;
+  font-size: 14px;
+}
+.ms-input input:hover {
+  background-color: #e6e6e6;
+  cursor: pointer;
+}
+.ms-input input:focus {
+  border: 1px solid #50b83c;
+}
+
+.ms-input input:read-only {
+  border-color: #e0e0e0;
+  background-color: #ebebeb;
+  color: #666666;
+  pointer-events: none;
+}
+
+.ms-input input[type="radio"]:read-only {
+  pointer-events: unset;
+}
+
+input.ms-input--error {
+  border-color: #e61d1d !important;
+}
+
+input.ms-input--validate {
+  border-color: #50b83c;
+}
+
+.ms-input__error-msg {
+  font-size: 13px;
+  font-weight: 400;
+  color: #e61d1d;
+}
+
+.ms-input__content {
+  display: flex;
+  align-items: center;
+}
+
+.ms-input__icon {
+  position: relative;
+  transform: translateX(-100%);
+  left: -8px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.checkbox input {
+  width: 18px;
+  height: 18px;
+}
+
+.checkbox__item {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.ms-radio-group {
+  display: flex;
+  height: 36px;
+  column-gap: 12px;
+}
+
+.radio-item {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.ms-input input[type="radio"] {
+  width: 18px;
+  height: 18px;
+}
+
+.ms-input input[type="radio"]:checked {
+  border: red;
+}
+
+.ms-input input[type="date"],
+.ms-input input[type="number"] {
+  padding-right: 8px;
+}
+
+.ms-input input[type="date"] {
+  text-align: center;
+}
+
+.ms-input--required .ms-input__label::after {
+  content: "*";
+  padding-left: 1px;
+  color: #e61d1d;
+}
+
+/* hide arrow/spinner from input type number */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

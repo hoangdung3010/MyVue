@@ -1,0 +1,80 @@
+
+.ms-cmb {
+    position: relative;
+    display: inline-block;
+}
+
+.ms-cmb .ms-input, .ms-cmb .ms-cmb__dropdown {
+    width: 100%;
+}
+
+
+.ms-cmb .ms-input input {
+    padding: 0 40px 0 12px;
+    width: 100%;
+}
+
+.ms-cmb .ms-input__content {
+    position: relative;
+}
+
+.ms-cmb__btn-expand {
+    position: absolute;
+    right: 0;
+    height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid rgb(234, 230, 230);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 0 12px;
+}
+
+.ms-cmb__btn-expand:hover {
+    opacity: 0.8;
+}
+.ms-cmb__btn-expand:active {
+    background-color: rgb(218, 213, 213);
+}
+
+.ms-cmb__dropdown {
+    position: absolute;
+    max-height: 308px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px rgba(23,27,42,0.24);
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #1F1F1F;
+    overflow: auto;
+    z-index: 2;
+}
+
+.ms-cmb__option {
+    height: 36px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.ms-cmb__option:hover {
+    background-color: rgba(80,184,60,0.1);
+    border-radius: 4px;
+}
+
+.ms-cmb__option--selected {
+    position: relative;
+    color: #50B83C;
+}
+
+.ms-cmb__option--selected::after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    background: url('../../assets/icon/Sprites.64af8f61.svg') no-repeat -1225px -363px;
+	width: 14px;
+	height: 11px;
+    right: 8px;
+}

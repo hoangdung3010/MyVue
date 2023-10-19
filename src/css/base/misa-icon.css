@@ -1,0 +1,388 @@
+/* css div wrapper icon */
+.icon-wrapper {
+	position: relative;
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon-disable {
+	cursor: not-allowed !important;
+}
+
+/* css description for icon */
+.icon-wrapper:hover .icon-desc {
+	display: block;
+}
+
+.icon-desc {
+	position: absolute;
+	top: 30px;
+	white-space: nowrap;
+	font-size: 14px;
+	font-weight: 500;
+	color: #fff;
+	background-color: #003166;
+	padding: 6px 8px;
+	border-radius: 6px;
+	border-top: 1px solid #fff;
+	display: none;
+}
+
+.icon-desc-pseudo {
+	position: absolute;
+	top: 28px;
+	width: 16px;
+	height: 16px;
+	background-color: #003166;
+	transform: rotate(45deg);
+	display: none;
+}
+
+/* css description on top */
+.icon-desc--top {
+	top: -38px;
+	border-top: none;
+	border-bottom: 1px solid #fff;
+	z-index: 9;
+}
+
+.icon-desc-pseudo--top {
+	top: -20px;
+	z-index: 9;
+}
+
+.icon-wrapper:hover .icon-desc-pseudo {
+	display: block;
+}
+
+.icon-option-more .icon-desc--top {
+	top: -42px;
+}
+
+.icon-option-more .icon-desc-pseudo--top {
+	top: -24px;
+}
+
+.icon-collapse-wrapper {
+	transition-duration: 0.3s;
+}
+
+.icon-rotate {
+	transform: rotate(180deg);
+	transition-duration: 0.3s;
+}
+
+/* some icon */
+.icon {
+	position: relative;
+}
+
+.icon::after {
+	content: '';
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+}
+
+.icon-toggle {
+    background: url('../../assets/img/sprites.svg') no-repeat -196px -4px;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-setting--gray {
+    background: url('../../assets/img/sprites.svg') no-repeat -266px -170px;
+	width: 20px;
+	height: 20px;
+}
+
+.icon-book {
+    background: url('../../assets/icon/ic-document-help.svg') no-repeat -2px -3px;
+	width: 20px;
+	height: 17px;
+}
+
+.icon-more {
+    background: url('../../assets/icon/ic-more-gray.svg') no-repeat -2px -2px;
+	width: 20px;
+	height: 20px;
+}
+
+.icon-question {
+    background: url('../../assets/img/sprites.svg') no-repeat -50px -50px;
+	width: 20px;
+	height: 20px;
+}
+
+.icon-question--small {
+	background: url('../../assets/icon/question.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+}
+
+.icon-notify {
+    background: url('../../assets/img/sprites.svg') no-repeat -27px -50px;
+	width: 18px;
+	height: 20px;
+}
+
+.icon-dashboard {
+    background: url('../../assets/icon/ic-dashboard.svg') no-repeat -2px -2px;
+	width: 20px;
+	height: 20px;
+	position: relative;
+}
+
+.icon-dashboard::after {
+	background: url('../../assets/icon/ic-dashboard-active.svg') no-repeat -2px -2px;
+	width: 20px;
+	height: 20px;
+}
+
+.icon-movement {
+    background: url('../../assets/icon/ic-movement.svg') no-repeat -4px -2px;
+	width: 16px;
+	height: 20px;
+	position: relative;
+}
+
+.icon-movement::after {
+    background: url('../../assets/icon/ic-movement-active.svg') no-repeat -4px -2px;
+	width: 16px;
+	height: 20px;
+}
+
+.icon-reward {
+    background: url('../../assets/icon/ic-reward.svg') no-repeat -2px -2px;
+	width: 20px;
+	height: 20px;
+	position: relative;
+}
+
+.icon-reward::after {
+    background: url('../../assets/icon/ic-reward-active.svg') no-repeat -2px -2px;
+	width: 20px;
+	height: 20px;
+}
+
+.icon-decision {
+    background: url('../../assets/icon/ic-decision-menu.svg') no-repeat -4px -2px;
+	width: 17px;
+	height: 20px;
+	position: relative;
+}
+
+.icon-decision::after {
+    background: url('../../assets/icon/ic-decision-menu-active.svg') no-repeat -4px -2px;
+	width: 17px;
+	height: 20px;
+}
+
+.icon-profile {
+    background: url('../../assets/icon/ic-profile.svg') no-repeat -2px -2px;
+	width: 20px;
+	height: 20px;
+	position: relative;
+}
+
+.icon-profile::after {
+    background: url('../../assets/icon/ic-profile-active.svg') no-repeat -2px -2px;
+	width: 20px;
+	height: 20px;
+}
+
+.icon-search {
+    background: url('../../assets/icon/ic-search.svg') no-repeat -3px -3px;
+	width: 18px;
+	height: 18px;
+	position: relative;
+}
+
+.icon-search::after {
+    background: url('../../assets/icon/ic-search-active.svg') no-repeat -3px -3px;
+	width: 18px;
+	height: 18px;
+}
+
+.icon-search--gray {
+	background: url('../../assets/icon/ic-search-gray.svg') no-repeat -3px -3px;
+	width: 18px;
+	height: 18px;
+}
+
+.icon-report {
+    background: url('../../assets/icon/ic-report.svg') no-repeat -4px -2px;
+	width: 16px;
+	height: 20px;
+	position: relative;
+}
+
+.icon-report::after {
+    background: url('../../assets/icon/ic-report-active.svg') no-repeat -4px -2px;
+	width: 16px;
+	height: 20px;
+}
+
+.icon-category {
+    background: url('../../assets/icon/ic-category.svg') no-repeat -4px -2px;
+	width: 16px;
+	height: 20px;
+	position: relative;
+}
+
+.icon-category::after {
+    background: url('../../assets/icon/ic-category-active.svg') no-repeat -4px -2px;
+	width: 16px;
+	height: 20px;
+}
+
+.icon-setting {
+    background: url('../../assets/icon/ic-setting.svg') no-repeat -2px -2px;
+	width: 20px;
+	height: 20px;
+	position: relative;
+}
+
+.icon-setting::after {
+    background: url('../../assets/icon/ic-setting-setting.svg') no-repeat -2px -2px;
+	width: 20px;
+	height: 20px;
+}
+
+.icon-guide {
+    background: url('../../assets/icon/ic-guide.svg') no-repeat -3px -2px;
+	width: 18px;
+	height: 20px;
+	position: relative;
+}
+
+.icon-guide::after {
+    background: url('../../assets/icon/ic-guide-active.svg') no-repeat -3px -2px;
+	width: 18px;
+	height: 20px;
+}
+
+.icon-arrow-right {
+	background: url('../../assets/icon/ic-arrow-black-right.svg') no-repeat -8px -7px;
+	width: 7px;
+	height: 10px;
+	position: relative;
+}
+
+.icon-arrow-right::after {
+	background: url('../../assets/icon/ic-arrow-color-right.svg') no-repeat -8px -7px;
+	width: 7px;
+	height: 10px;
+}
+
+.icon-collapse {
+	background: url('../../assets/icon/ic-collapse.svg') no-repeat -4px -6px;
+	width: 14px;
+	height: 12px;
+}
+
+.icon-add {
+	background: url('../../assets/img/sprites.svg') no-repeat -196px -100px;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-filter {
+	background: url('../../assets/img/sprites.svg') no-repeat -100px -52px;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-down {
+	background: url('../../assets/icon/down-arrow.png');
+	width: 16px;
+	height: 16px;
+}
+
+.icon-right{
+	background: url('../../assets/icon/right-chevron.png');
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+}
+
+.icon-left{
+	background: url('../../assets/icon/left-chevron.png');
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+}
+
+.icon-right-not-allow {
+	background: url('../../assets/icon/right-chevron-not-allow.png');
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+	cursor: not-allowed !important;
+}
+
+.icon-left-not-allow {
+	background: url('../../assets/icon/left-chevron-not-allow.png');
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+	cursor: not-allowed !important;
+}
+
+.icon-close {
+	background: url('../../assets/img/sprites.svg') no-repeat -246px -30px;
+	width: 12px;
+	height: 12px;
+}
+
+.icon-close::after {
+	background: url('../../assets/img/sprites.svg') no-repeat -270px -30px;
+	width: 12px;
+	height: 12px;
+}
+
+.icon-tick {
+	background: url('../../assets/img/sprites.svg') no-repeat -196px -30px;
+	width: 16px;
+	height: 12px;
+}
+
+.icon-three-dot {
+	background: url('../../assets/img/sprites.svg') no-repeat -171px -58px;
+	width: 18px;
+	height: 4px;
+}
+
+.icon-pencil {
+	background: url('../../assets/img/sprites.svg') no-repeat -4px -76px;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-wrapper:has(.icon-warning) {
+	width: 36px;
+	height: 36px;
+}
+
+.icon-warning {
+	background: url('../../assets/icon/warning.png');
+	background-size: contain;
+	width: 32px;
+	height: 32px;
+}
+
+.icon-success {
+	background: url('../../assets/icon/success.png');
+	background-size: contain;
+	width: 20px;
+	height: 20px;
+}
